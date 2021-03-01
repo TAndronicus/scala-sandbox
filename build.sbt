@@ -14,7 +14,12 @@ libraryDependencies += "dev.zio" %% "zio-streams" % "1.0.4-2"
 libraryDependencies += "org.atnos" %% "eff" % "5.14.0"
 libraryDependencies += "com.beachape" %% "enumeratum" % "1.6.1"
 libraryDependencies += "com.github.pureconfig" %% "pureconfig" % "0.14.0"
-libraryDependencies += "com.softwaremill.common" % "tagging_2.11" % "2.2.1"
+libraryDependencies += "com.softwaremill.common" %% "tagging" % "2.2.1"
+libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-core" % "0.17.13"
+libraryDependencies += "com.typesafe.akka" %% "akka-http" % "10.2.1"
+libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % "2.6.10"
+libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.6.10"
+libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-akka-http-server" % "0.17.13" exclude("com.typesafe.akka", "akka-stream_2.12")
 
 addCompilerPlugin("org.typelevel" %% "kind-projector" % "0.11.3" cross CrossVersion.full)
 
