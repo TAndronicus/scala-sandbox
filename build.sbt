@@ -20,6 +20,7 @@ libraryDependencies += "com.typesafe.akka" %% "akka-http" % "10.2.1"
 libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % "2.6.10"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.6.10"
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-akka-http-server" % "0.17.13" exclude("com.typesafe.akka", "akka-stream_2.12")
+libraryDependencies += "eu.timepit" %% "refined" % "0.9.22"
 
 addCompilerPlugin("org.typelevel" %% "kind-projector" % "0.11.3" cross CrossVersion.full)
 
