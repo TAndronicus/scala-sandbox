@@ -2,13 +2,13 @@ name := "scala-sandbox"
 
 version := "0.1"
 
-scalaVersion := "2.12.12"
+scalaVersion := "2.12.13"
 
 semanticdbEnabled := true
 semanticdbVersion := scalafixSemanticdb.revision
 
 libraryDependencies += "com.twitter" %% "util-core" % "21.1.0"
-//libraryDependencies += "com.twitter" %% "summingbird-core" % "0.9.1"
+//libraryDependencies += "com.twitter" %% "summingbird-core" % "0.9.1" // requires scala 2.11 or lower
 libraryDependencies += "dev.zio" %% "zio" % "1.0.4-2"
 libraryDependencies += "dev.zio" %% "zio-streams" % "1.0.4-2"
 libraryDependencies += "org.atnos" %% "eff" % "5.14.0"
