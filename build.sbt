@@ -21,8 +21,12 @@ libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % "2.6.10"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.6.10"
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-akka-http-server" % "0.17.13" exclude("com.typesafe.akka", "akka-stream_2.12")
 libraryDependencies += "eu.timepit" %% "refined" % "0.9.22"
+libraryDependencies += "co.fs2" %% "fs2-core" % "2.5.3"
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.5.0"
+libraryDependencies += "org.typelevel" %% "cats-effect" % "2.4.1"
 
 addCompilerPlugin("org.typelevel" %% "kind-projector" % "0.11.3" cross CrossVersion.full)
+addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")
 
 scalacOptions ++= List(
   "-Ypartial-unification",
